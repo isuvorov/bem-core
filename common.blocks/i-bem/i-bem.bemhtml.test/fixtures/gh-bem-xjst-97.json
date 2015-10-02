@@ -1,0 +1,4 @@
+{
+  "block": "test",
+  "mods": { "hello": "world" }
+}

@@ -1,0 +1,6 @@
+block('test').content()(function() {
+  var before = JSON.stringify(this.mods);
+  this.reapply();
+  var after = JSON.stringify(this.mods);
+  this._str += before + ' - ' + after;
+});
