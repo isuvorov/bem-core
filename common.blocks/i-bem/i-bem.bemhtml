@@ -257,25 +257,25 @@ exports.apply = BEMContext.apply = function BEMContext_apply(context) {
 };
 
 BEMContext.prototype.reapply = function reapply() {
-    var mode = typeof $$mode !== 'undefined' && $$mode;
-    var block = typeof $$block !== 'undefined' && $$block;
-    var elem = typeof $$elem !== 'undefined' && $$elem;
-    var elemMods = typeof $$elemMods !== 'undefined' && $$elemMods;
-    var mods = typeof $$mods !== 'undefined' && $$mods;
+    var mode = typeof $$mode !== 'undefined' && $$mode,
+        block = typeof $$block !== 'undefined' && $$block,
+        elem = typeof $$elem !== 'undefined' && $$elem,
+        elemMods = typeof $$elemMods !== 'undefined' && $$elemMods,
+        mods = typeof $$mods !== 'undefined' && $$mods,
 
-    var classicMode = this._mode;
-    var classicBlock = this.block;
-    var classicElem = this.elem;
-    var classicElemMods = this.elemMods;
-    var classicMods = this.mods;
+        classicMode = this._mode,
+        classicBlock = this.block,
+        classicElem = this.elem,
+        classicElemMods = this.elemMods,
+        classicMods = this.mods,
 
-    var res = BEMContext.apply.apply(this, arguments);
+        res = BEMContext.apply.apply(this, arguments);
 
-    if (mode) $$mode = mode;
-    if (block) $$block = block;
-    if (elem) $$elem = elem;
-    if (elemMods) $$elemMods = elemMods;
-    if (mods) $$mods = mods;
+    if(mode) $$mode = mode;
+    if(block) $$block = block;
+    if(elem) $$elem = elem;
+    if(elemMods) $$elemMods = elemMods;
+    if(mods) $$mods = mods;
 
     this._mode = classicMode;
     this.block = classicBlock;

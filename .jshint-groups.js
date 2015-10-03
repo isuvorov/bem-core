@@ -9,12 +9,12 @@ module.exports = {
         loopfunc : true,
         onecase : true,
         quotmark : 'single',
-        globals: {
-          '$$mode': true,
-          '$$block': true,
-          '$$elem': true,
-          '$$elemMods': true,
-          '$$mods': true
+        globals : {
+          '$$mode' : true,
+          '$$block' : true,
+          '$$elem' : true,
+          '$$elemMods' : true,
+          '$$mods' : true
         }
     },
 
