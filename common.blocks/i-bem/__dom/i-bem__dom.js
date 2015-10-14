@@ -1005,6 +1005,9 @@ DOM = BEM.decl('i-bem__dom',/** @lends BEMDOM.prototype */{
             objects.each(params, function(blockParams) {
                 if(blockParams.uniqId) {
                     var block = uniqIdToBlock[blockParams.uniqId];
+                    if(block){
+                        block.setMod("js", "not");
+                    }
                     block?
                         removeDomNodeFromBlock(block, domNode) :
                         delete uniqIdToDomElems[blockParams.uniqId];
